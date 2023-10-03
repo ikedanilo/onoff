@@ -57,6 +57,14 @@
                         -->
 
                         <li class="nav-item mb-1">
+                            <li>
+                                <a href="#" class="nav-link link-body-emphasis ">
+                                    Confluence T-Rexx
+                                </a>
+                            </li>
+                        </li>
+
+                        <li class="nav-item mb-1">
                             <button class="nav-link link-body-emphasis collapsed"
                                     data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
                                     aria-expanded="false">
@@ -72,50 +80,25 @@
                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Portal
                                         T-Rexx</a>
                                     </li>
-
-
                                 </ul>
                             </div>
                         </li>
 
-                        <li class="nav-item">
-                            <button class="nav-link link-body-emphasis collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
-                                Serviços
-                            </button>
-                            <div class="collapse" id="orders-collapse">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#"
-                                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-RITM</a>
-                                    </li>
-                                    <li><a href="#"
-                                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Mudança</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item mb-1">
-                        <li>
-                            <a href="#" class="nav-link link-body-emphasis ">
-                                Confluence T-Rexx
-                            </a>
-                        </li>
-                        </li>
 
                     </ul>
-
-
                 </div>
             </div>
         </div>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-1 pb-0 mb-3 border-bottom">
-                <h4>{% block titulo %}{% endblock %}</h4>
+            <!--
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-1 pb-0 mb-3 ">
+            -->
+            <div class="d-flex border-bottom">
+                <div class="p-2 flex-grow-1 align-items-center"><h4>{% block titulo %}{% endblock %}</h4></div>
                 {% block refresh %}{% endblock %}
             </div>
+            <br>
 
             {% block conteudo %}{% endblock %}
 
