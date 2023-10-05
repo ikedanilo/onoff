@@ -54,12 +54,9 @@ def onoff():
 
     }
 
-
-
     context = classes.junta1(cpc_profile_dic, cec_lpar_dic, cpc_list)
-
+    
     return render_template('onoff.html', timestamp={'hora': datetime.now()}, context={'cpc_operations': context})
-
 
 if __name__ == '__main__':
     app.run(debug=True)
